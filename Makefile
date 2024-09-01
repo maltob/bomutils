@@ -24,7 +24,7 @@ PREFIX=/usr
 
 SUFFIX=
 CXXFLAGS=-g -O3 -ffile-prefix-map=/home/lbr/code/bomutils=. -fstack-protector-all -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -s
-LDFLAGS=-pie -Wl,-z,now,-z,relro
+LDFLAGS=-fPIE -Wl,-z,now,-z,relro
 LIBS=
 
 BIN_DIR=$(PREFIX)/bin
